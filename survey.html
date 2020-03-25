@@ -9,6 +9,8 @@
 </head>
 <body>
   <div class="container">
+
+  <form id="survey">
     <div class="form-group">
        <h1>What's Your Sign?</h1>
        <select class="form-control" id="sign">
@@ -27,45 +29,42 @@
       </select>
     </div>
     <h1>What's Your Favorite Bev?</h1>
-    <div class="radio">
-      <label>
-        <input type="radio" name="food" value="taurus" checked>
-        Taurus
-      </label>
+    <div>
+      <input type="radio" id="taurus" name="food" value="taurus">
+      <label for="taurus">Taurus</label>
     </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="food" value="tears">
-        Orphan tears
-      </label>
+    <div>
+      <input type="radio" id="orphantears" name="food" value="orphantears">
+      <label for="orphantears">Orphan tears</label>
     </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="food" value="lotion">
-        Lemon Verbena lotion
-      </label>
+    <div>
+      <input type="radio" id="bean" name="food" value="bean">
+      <label for="bean">Bean</label>
     </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="food" value="bean" checked>
-        bean
-      </label>
+    <div>
+      <input type="radio" id="lotion" name="food" value="lotion">
+      <label for="lotion">Lemon Verbena Lotion</label>
     </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="food" value="mama" checked>
-        what mama makes
-      </label>
+    <div>
+      <input type="radio" id="mama" name="food" value="mama">
+      <label for="mama">what mama make</label>
     </div>
-    <h1>What Color is your <em>FEAR?</em></h1>
-    <div class="form-group">
-      <input id="color" class="form-control" type="color">
+    <h1>What Color Is Your Fear?</h1>
+    <div>
+      <input type="color" id="fear" name="fear"
+           value="#000000">
+    <label for="fear">FEAR</label>
     </div>
-    
-
-  </div>
+  <button type="submit" class="btn">SUBMIT</button>
+  </form>
+</div>
   
+<div id="results">
+  <h1>Here's What You Picked!</h1>
+  <p>
+    <span class></span>
+  </p>
+</div>
 
-  
 </body>
 </html>
